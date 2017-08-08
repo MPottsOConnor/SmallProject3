@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Question 3</title>
+    <link rel="stylesheet" href="jquery-ui-smoothness.css" />
+    <script src="jquery.min.js" ></script>
+    <script src="jquery-ui.min.js" ></script>
+    <script src="question3.js" ></script>
+	<style>
+	/**slider and button css adjusted here*/
+		#slider {
+			width: 500px;
+		}
+	  #container {
+	    margin: auto;
+	    width: 1300px;
+	    padding: 8px;
+	    background-color: #8080A0;
+		}
+	  #mainviewer {
+	    width: 1230px;
+	    margin: auto;
+	  }
+	  h1 {
+	    border-bottom-style: solid;
+	  }
+	  .absolute-pos img {
+	    position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    display: none;
+			z-index: 0
+	  }
+		#barDiv {
+			display: inline-block;
+		}
+		#colLeft {
+			display: inline-block;
+		}
+		#colRight {
+			display: inline-block;
+		}
+		#slider {
+			display: inline-block;
+			width: 300px;
+		}
+	</style>	
+
+  </head>
+  <body>
+    <div id="container">
+      <h1>Timer Events and jQuery UI</h1>
+      <div id="mainviewer" style="position: relative;">
+	<div>
+	  <img id="banner-base" src="question3-banner-base.png" />
+	</div>
+	<div class="absolute-pos">
+	  <img id="banner-1" src="question3-banner1.png" />
+	  <img id="banner-2" src="question3-banner2.png" />
+	  <img id="banner-3" src="question3-banner3.png" />
+	  <img id="banner-4" src="question3-banner4.png" />
+	</div>
+<!--Question 3(1) replacing the next button-->
+      </div>
+      <div id="start">
+				Start
+      </div>
+			 <div id="stop">
+				Stop
+      </div>
+<!--Question 3(4) creation of slider in HTML-->
+			<div id="barDiv">
+				<span id="colLeft"><strong>Speed: (slow) &nbsp&nbsp  </span>
+				<div id="slider"></div>
+				<span id="colRight">&nbsp(fast)</strong></span>
+				</div>
+			</div>
+    </div>
+  </body>
+</html>

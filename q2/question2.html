@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Question 2</title>
+
+    <style>
+
+      fieldset, label {
+        padding: 6px;
+      }
+      label {
+        display: inline-block;
+        padding: 2px;
+        width: 120px;
+      }      
+      textarea, input {
+        padding: 3px;
+        margin: 8px;
+      }
+      .creditset span, input{
+        display: inline-block;
+      }
+      .creditset span{
+        width: 120px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form>
+      <!--Question 2(1)-->
+    <fieldset>
+      <legend>Billing address</legend>
+      (*)Address
+      <!--required="true" worked during testing but not at a later stage-->
+      <textarea name="address" rows="6" cols="30" required="true"> </textarea>
+      <br>
+      Post Code:
+      <input type="text" size="6" />
+      </fieldset>
+
+      <fieldset class="creditset">
+        <legend>Card details</legend>
+        <fieldset>
+           <!--Question 2(2)-->
+          <legend>(*)Card Type</legend>
+          <input type="radio" name="radiogroup" value="VISA" required>VISA
+          <input type="radio" name="radiogroup" value="Mastercard" required>Mastercard
+        </fieldset>
+       
+        <!--Question 2(3)-->
+         <span>(*)Name:</span><input id="details" type="text" size="40" required />
+         <br>
+         <span>(*)Card Number:</span><input id="details" type="text" size="4" required /><input type="text" size="4" required /><input type="text" size="4" required /><input type="text" size="4" required />
+         <br>
+         <span>(*)Expiry Date:</span><input id="details" name="expiry" type="text" size="4" required />
+    
+         <select name="expiry">
+           <option value="month">Month</option>
+           <option value="month">January</option>
+           <option value="month">February</option>
+           <option value="month">March</option>
+           <option value="month">April</option>
+           <option value="month">May</option>
+           <option value="month">June</option>
+           <option value="month">July</option>
+           <option value="month">August</option>
+           <option value="month">September</option>
+           <option value="month">October</option>
+           <option value="month">November</option>
+           <option value="month">December</option>
+
+         <input type="number" name="expiry" min="2016" max="2020" size="10" required/>
+
+          </fieldset>
+          <fieldset>
+             <!--Question 2(4)-->
+          <input id="submitform" type="submit" value="Place Order">
+
+      </fieldset>
+     
+    </form> 
+  </body>
+</html>
